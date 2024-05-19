@@ -55,6 +55,10 @@ router.delete("/delete-account", isAuthenticated, apiController.DeleteAccount);
  * @returns {object} 200 - Success message
  * @security isAuthenticated
  */
-router.put("/edit-account-email", isAuthenticated, apiController.DeleteAccount);
+router.put(
+  "/edit-account-email",
+  isAuthenticated,
+  apiController.EditAccountEmail
+);
 
 export default router;
